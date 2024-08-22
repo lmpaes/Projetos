@@ -1,0 +1,204 @@
+/*Edição geral das paginas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    background-color: #222A33;
+}
+
+/*Edição geral do menu horizontal*/
+nav.menuHorizontal{
+    margin: 5px 0px;
+    padding: 9px 10px;
+}
+
+nav.menuHorizontal ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav.menuHorizontal ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+
+}
+
+nav.menuHorizontal ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #006ADB;
+    border-radius: 30px;
+
+}
+
+/*Edição geral da barra abaixo do menu*/
+div.barraMenu{
+    height: 1px;
+    width: 60%;
+    margin: 14px auto 40px;
+    background-color: rgb(227, 91, 17);
+}
+
+/*Edição geral dos titulos das paginas*/
+div.titulo{
+    margin: 0px 10% 50px;
+}
+    
+div.titulo h1{
+    font-size: 75px;
+}
+    
+div.titulo h2{
+    font-size: 30px;
+}
+/*Edição geral da area de conteudo das paginas*/
+div.conteudo{
+    margin: 20px 10%;
+}
+
+/*Edição das paginas com duas metades (sobreMim.html e contato.html)*/
+div.divisaoPagina {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.conteudoDivisao1{
+    max-width: 60%;
+    margin-right: 50px;
+}
+
+#textoDivisao p, ul, li{
+    list-style: none;
+}
+
+#textoDivisao p, #textoDivisao ul{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+div.conteudoDivisao2{
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#rodape{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+
+}
+
+#rodape p{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/*Edição da imagem da pagina sobreMim.html */
+#imagem_sobreMim{
+    max-width: 360px;
+    border-radius: 20px;
+}
+
+/*Edição do formulario da pagina contato.html */
+#formulario form, #formulario p, label{
+    background-color: white;
+    color: #222A33;
+    font-weight: 900;
+}
+
+#formulario form{
+    height: auto;
+    max-width: 100%;
+    margin: 60px auto 0px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#formulario p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#formulario label{
+    font-size: 14px;
+}
+
+#formulario input, textarea{
+    background-color: rgb(224, 224, 224);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: #222A33;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#formulario input{
+    height: 30px;
+}
+
+#formulario textarea{
+    height: 100px;
+}
+
+/*Edição do botao usado no formulario da pagina contato.html e portfolio.hmtl */
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: rgb(227, 91, 17);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    
+}
+
+.botao:hover{
+    background-color: rgba(227, 90, 17, 0.671);
+    cursor: pointer;
+}
+
+/*Edição das paginas com conteudo completo (formacao.html e portfolio.html)*/
+.cursos{
+    font-size: 25px;
+}
+
+div.projeto, .projeto ul, .projeto li, .projeto a{
+    background-color: white;
+    color: #222A33;
+    text-decoration: none;
+}
+
+div.projeto{
+    height: auto;
+    width: 80%;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none; 
+}

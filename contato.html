@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="menuHorizontal"> <!--Menu de navegação-->
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formação Educacional</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="barraMenu"></div> <!--Barra abaixo do menu(Div criada para estilização do site)-->
+    </nav>
+
+    <div class="titulo"><!--Titulo da pagina-->
+        <h1>Contato</h1>
+    </div>
+
+
+    <div class="conteudo"> <!--Div armazenar todo conteudo das paginas criadas-->
+        <div class="divisaoPagina"> <!--divisão da pagina "conteudo" em duas metades -->
+            <div class="conteudoDivisao1"><!--Div para edicão da primeira metade-->
+                <div id="textoDivisao">
+
+                    <!--Conteudo da pagina (paragrafo + lista)-->
+                    <p style="margin-top: 70px;">Para entrar em contato use as opções abaixo ou se preferir preencha o formulario ao lado:</p><br>
+
+                    <ul>
+                        <li>Whats App: (11) 97899-9999</li>
+                        <li>E-mail: leonardo.exemplo@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="conteudoDivisao2"><!--Div para edicão da segunda metade-->
+                <div id="formulario"><!--Fomulario com input e textarea-->
+                    <form action="#">
+                        <p>Preencha o formulário para entrarmos em contato </p>
+                            <label for="primeiroNome">Digite seu primeiro nome</label><br>
+                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Digite seu primeiro nome">
+                            <br>
+
+                            <label for="sobrenome">Digite seu sobrenome</label><br>
+                            <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome">
+                            <br>
+
+                            <label for="email">Digite seu e-mail</label><br>
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                            <br>
+
+                            <label for="comentario">Escreva aqui as ideias do seu projeto</label><br>
+                            <textarea id="comentario" rows="4" cols="50" name="comentario" placeholder="Escreva aqui..."></textarea><br>
+
+                            <button class="botao" id="erroBotao"> Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="rodape"><!--Rodapé da pagina-->
+
+        <p>Atenção! Número de Whats App, endereço de e-mail e formulário são apenas para treinamento de HTML e CSS, não são informações reais. </p>
+
+        <p>Dados corretos para contato estão registrados em meu currículo</p> 
+
+    </footer>
+
+</body>
+
+<script> //Codigo JavaScript para apresentar erro ao clicar no botão enviar no formulario
+    document.getElementById("erroBotao").onclick = function() {
+        alert("Formulário não enviado. Leia o rodapé da pagina");
+    };
+</script>
+</html>
